@@ -1,0 +1,9 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<%= content_tag :div,
+tag(:canvas, "data-line-chart-target": :canvas ),
+data:{
+    controller: "line-chart",
+    "line-chart-url-value": transactions_path
+} %>
